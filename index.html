@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jung Beauté – Natural Skincare</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+
+
+<body>
+
+<!-- PRODUCT MODAL -->
+<div id="product-modal" class="modal">
+  <div class="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-title"></h2>
+    <img id="modal-img" alt="Product Image">
+    <p><strong>Price:</strong> <span id="modal-price"></span></p>
+    <p><strong>Composition:</strong> <span id="modal-comp"></span></p>
+    <p><strong>Benefits:</strong> <span id="modal-bene"></span></p>
+    <p><strong>Instructions:</strong> <span id="modal-inst"></span></p>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="site-content">
+
+<header class="site-header">
+  <div class="inner">
+    <h1>Jung Beauté</h1>
+    <p class="tagline">Let your lips shine, let your confidence rise!</p>
+  </div>
+</header>
+
+<main class="inner">
+
+<section id="about">
+  <h2>About Jung Beauté</h2>
+  <p class="about-text">
+   Natural lipcare products crafted with love for teens 💗 <br>
+   <span class="ps-text">ps. it's pronounced as "yung beauty" :p</span>
+</p>
+
+</section>
+
+<section id="products">
+  <h2 class="section-title">Our Products</h2>
+
+  <!-- ROW 1 -->
+  <div class="product-grid">
+    <div class="product-card" onclick="openModal('beet')">
+      <img src="https://i.postimg.cc/kgC9TxHG/Whats-App-Image-2025-12-30-at-1-26-30-PM.jpg">
+      <h3>Beet Bliss Lip Oil</h3>
+      <p>Combined with the goodness of aloe vera, beetroot, rose water, arnica oil & vitamin E.</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('tangy')">
+      <img src="https://i.postimg.cc/XvR0yd9v/Whats-App-Image-2025-12-30-at-1-26-30-PM-(2).jpg">
+      <h3>Tangy Vera Lip Oil</h3>
+      <p>Combined with the goodness of aloe vera, orange oil, rosemary oil, arnica oil & vitamin E.</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('honey')">
+      <img src="https://i.postimg.cc/nLsd7W1T/Whats-App-Image-2025-12-30-at-1-26-30-PM-(1).jpg">
+      <h3>Honey Cappuccino Water Tint</h3>
+      <p>Combined with the goodness of aloe vera, coffee, honey, vanilla, castor oil & vitamin E.</p>
+    </div>
+  </div>
+
+  <!-- ROW 2 -->
+  <div class="product-grid">
+    <div class="product-card" onclick="openModal('sparklybeet')">
+      <img src="https://i.postimg.cc/7YxmXhVb/Whats-App-Image-2025-12-30-at-1-26-12-PM.jpg">
+      <h3>Sparkly Beet Bliss Lip Oil</h3>
+      <p>Combined with the goodness of edible glitter, aloe vera, beetroot, rose water, arnica oil & vitamin E.</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('sparklytangy')">
+      <img src="https://i.postimg.cc/brL040Ts/Whats-App-Image-2025-12-30-at-1-26-13-PM.jpg">
+      <h3>Sparkly Tangy Vera Lip Oil</h3>
+      <p>Combined with the goodness of edible glitter, aloe vera, orange oil, rosemary oil, arnica oil & vitamin E.</p>
+    </div>
+
+    <div class="product-card" onclick="openModal('sparklyhoney')">
+      <img src="https://i.postimg.cc/Gt3GP8C0/Whats-App-Image-2025-12-30-at-1-26-12-PM-(1).jpg">
+      <h3>Sparkly Honey Cappuccino Water Tint</h3>
+      <p>Combined with the goodness of edible glitter, aloe vera, coffee, honey, vanilla, castor oil & vitamin E.</p>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="insta-link">DM us on Instagram @jung.beaute</p>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Jung Beauté</p>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
